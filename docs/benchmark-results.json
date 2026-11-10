@@ -1,0 +1,61 @@
+{
+  "measured_at_rome": "2026-11-10 11:56:29 CET",
+  "machine": "Linux-6.12.113+-x86_64-with-glibc2.41",
+  "python": "3.13.5",
+  "runs": {
+    "pulseping_lite": [
+      {
+        "fresh_process_to_result_ms": 64.26581700361567
+      },
+      {
+        "fresh_process_to_result_ms": 63.93826299608918
+      },
+      {
+        "fresh_process_to_result_ms": 63.87883300340036
+      },
+      {
+        "fresh_process_to_result_ms": 64.24515300022904
+      },
+      {
+        "fresh_process_to_result_ms": 64.36791499436367
+      }
+    ],
+    "blackbox_exporter": [
+      {
+        "fresh_process_to_result_ms": 12.9133099981118,
+        "ready_ms": 11.510842996358406
+      },
+      {
+        "fresh_process_to_result_ms": 10.908878997724969,
+        "ready_ms": 8.890182994946372
+      },
+      {
+        "fresh_process_to_result_ms": 12.651835997530725,
+        "ready_ms": 11.085530000855215
+      },
+      {
+        "fresh_process_to_result_ms": 12.763332997565158,
+        "ready_ms": 11.283608997473493
+      },
+      {
+        "fresh_process_to_result_ms": 11.666372003674041,
+        "ready_ms": 10.235269000986591
+      }
+    ]
+  },
+  "summary_medians": {
+    "pulseping_lite": {
+      "fresh_process_to_result_ms": 64.24515300022904,
+      "installed_payload_bytes": 6511,
+      "third_party_modules": 0
+    },
+    "blackbox_exporter": {
+      "fresh_process_to_result_ms": 12.651835997530725,
+      "ready_ms": 11.085530000855215,
+      "installed_payload_bytes": 35573925,
+      "embedded_go_dependency_modules": 40
+    }
+  },
+  "blackbox_config": "modules:\n  http_2xx:\n    prober: http\n    timeout: 2s\n    http:\n      preferred_ip_protocol: ip4\n",
+  "blackbox_build_metadata": "/workspace/pyforge/pulseping-readme-polish-2026-11-10/tools/blackbox_exporter-0.29.1.linux-amd64/blackbox_exporter: go1.27.3\n\tpath\tgithub.com/prometheus/blackbox_exporter\n\tmod\tgithub.com/prometheus/blackbox_exporter\tv0.29.1\t\n\tdep\tcel.dev/cel-go\tv0.32.0\th1:irvpFKr5EuGPyxeME03ERh0rii1TX+BDAnB9eL3IvNk=\n\tdep\tcel.dev/expr\tv0.25.2\th1:K6j46C81hXtZQfuX60cVWQFBJahKSE2gfRbNuvr5bFs=\n\tdep\tgithub.com/alecthomas/kingpin/v2\tv2.4.0\th1:f48lwail6p8zpO1bC4TxtqACaGqHYA22qkHjHpqDjYY=\n\tdep\tgithub.com/alecthomas/units\tv0.0.0-20240927000941-0f3dac36c52b\th1:mimo19zliBX/vSQ6PWWSL9lK8qwHozUj03+zLoEB8O0=\n\tdep\tgithub.com/andybalholm/brotli\tv1.2.6\th1:ftYnfj6usCp+UGV5kSJ3+chpMQgU+gJf/AxsUQ52REI=\n\tdep\tgithub.com/antlr4-go/antlr/v4\tv4.13.1\th1:SqQKkuVZ+zWkMMNkjy5FZe5mr5WURWnlpmOuzYWrPrQ=\n\tdep\tgithub.com/beorn7/perks\tv1.0.1\th1:VlbKKnNfV8bJzeqoa4cOKqO6bYr3WgKZxO8Z16+hsOM=\n\tdep\tgithub.com/cespare/xxhash/v2\tv2.3.0\th1:UL815xU9SqsFlibzuggzjXhog7bL6oX9BbNZnL2UFvs=\n\tdep\tgithub.com/coreos/go-systemd/v22\tv22.7.0\th1:LAEzFkke61DFROc7zNLX/WA2i5J8gYqe0rSj9KI28KA=\n\tdep\tgithub.com/golang-jwt/jwt/v5\tv5.3.1\th1:kYf81DTWFe7t+1VvL7eS+jKFVWaUnK9cB1qbwn63YCY=\n\tdep\tgithub.com/google/uuid\tv1.6.0\th1:NIvaJDMOsjHA8n1jAhLSgzrAzy1Hgr+hNrb57e+94F0=\n\tdep\tgithub.com/gorilla/websocket\tv1.5.3\th1:saDtZ6Pbx/0u+bgYQ3q96pZgCzfhKXGPqt7kZ72aNNg=\n\tdep\tgithub.com/jpillora/backoff\tv1.0.0\th1:uvFg412JmmHBHw7iwprIxkPMI+sGQ4kzOWsMeHnm2EA=\n\tdep\tgithub.com/mdlayher/socket\tv0.6.0\th1:ScZPaAGyO1icQnbFrhPM8mnXyMu9qukC1K4ZoM2IQKU=\n\tdep\tgithub.com/mdlayher/vsock\tv1.3.0\th1:bqQfZ1OznI03y6YiXp2sze05RVdzLn/zsfjnjd4+ivI=\n\tdep\tgithub.com/miekg/dns\tv1.1.73\th1:uhT8nJxmTrPJYClxVxTCX+CVn6qnzSiybRk72Z6DgrE=\n\tdep\tgithub.com/munnerz/goautoneg\tv0.0.0-20191010083416-a7dc8b61c822\th1:C3w9PqII01/Oq1c1nUAm88MOHcQC9l5mIlSMApZMrHA=\n\tdep\tgithub.com/mwitkow/go-conntrack\tv0.0.0-20190716064945-2f068394615f\th1:KUppIJq7/+SVif2QVs3tOP0zanoHgBEVAwHxUSIzRqU=\n\tdep\tgithub.com/prometheus/client_golang\tv1.25.0\th1:cDtW1TcFsMi1RJc8khwCKB4VhzwV04aKqbYtNOXuiK0=\n\tdep\tgithub.com/prometheus/client_model\tv0.6.3\th1:O0jaTVAYNxTHYInEPFJt5I3+sN8zqBtVMPTB1qyxiEo=\n\tdep\tgithub.com/prometheus/common\tv0.72.1\th1:ZAiQed/nk8IIcsdzb2TlJu23NEUDyDLQ9TXTN2WRK6Y=\n\tdep\tgithub.com/prometheus/exporter-toolkit\tv0.20.0\th1:hz3g2aPcq3mXlQSt1MGjj2rwVk1wtRalF+/FjYxFRkI=\n\tdep\tgithub.com/prometheus/procfs\tv0.22.0\th1:6q9+/JL9IKAPbCmBrv9n5O5Ty3NKnciV5X7YGw0oics=\n\tdep\tgithub.com/quic-go/qpack\tv0.6.0\th1:g7W+BMYynC1LbYLSqRt8PBg5Tgwxn214ZZR34VIOjz8=\n\tdep\tgithub.com/quic-go/quic-go\tv0.63.0\th1:LIFGHI4PFUhhw2dDD1ARHdCff143ffMHwZtbnbuJ78A=\n\tdep\tgithub.com/xhit/go-str2duration/v2\tv2.1.0\th1:lxklc02Drh6ynqX+DdPyp5pCKLUQpRT8bp8Ydu2Bstc=\n\tdep\tgo.yaml.in/yaml/v2\tv2.4.4\th1:tuyd0P+2Ont/d6e2rl3be67goVK4R6deVxCUX5vyPaQ=\n\tdep\tgo.yaml.in/yaml/v3\tv3.0.5\th1:N6y/pJk8buWs9NY5ERU2HSMfm+IuD/OtfdAnq6kESPw=\n\tdep\tgolang.org/x/crypto\tv0.58.0\th1:COkYLr4k7nDI4r6QtMML2AfzeIswWHAJthLS6K/M/54=\n\tdep\tgolang.org/x/exp\tv0.0.0-20240823005443-9b4947da3948\th1:kx6Ds3MlpiUHKj7syVnbp57++8WpuKPcR5yjLBjvLEA=\n\tdep\tgolang.org/x/net\tv0.61.0\th1:RR+6j/BTBCrggOLugxa+66R8FvoN6MHlzDlZIbN9YFw=\n\tdep\tgolang.org/x/oauth2\tv0.37.0\th1:JUlcxA8oAtauLfiH8FX2/FkAWHAdi0QtGCGc+hofE98=\n\tdep\tgolang.org/x/sync\tv0.24.0\th1:iqiDrGoDgyuvAKrhLQthUEzU/R378N78gXbBjxed7oA=\n\tdep\tgolang.org/x/sys\tv0.49.0\th1:XbzkgYJHdqh/8m2Uu0W/dQv8nktxx4BFHp1M0gROTXA=\n\tdep\tgolang.org/x/text\tv0.43.0\th1:1QivrlhwAsnMOcqgOdl9my7s9OyZl8O5/UGUTJVXoWc=\n\tdep\tgolang.org/x/time\tv0.15.0\th1:bbrp8t3bGUeFOx08pvsMYRTCVSMk89u4tKbNOZbp88U=\n\tdep\tgoogle.golang.org/genproto/googleapis/api\tv0.0.0-20260706201446-f0a921348800\th1:admdQBe8jR3VWhBsUrAOaF2Qw6K/+p5pSm1GN8+6Fw4=\n\tdep\tgoogle.golang.org/genproto/googleapis/rpc\tv0.0.0-20260706201446-f0a921348800\th1:qEHAMpSaUhtD0p3NbEEI83HwNGFxEwaSJ1G9PLnCBZE=\n\tdep\tgoogle.golang.org/grpc\tv1.84.0\th1:soMyaPJ8pAak5PIQ0DGBUir0XRo2fRoMqhNWMLlLxO0=\n\tdep\tgoogle.golang.org/protobuf\tv1.36.12\th1:pJOKDDOyeXErUroCihFAd5LQuwXBSpVnKGrj5o/fwxc=\n\tbuild\t-buildmode=exe\n\tbuild\t-compiler=gc\n\tbuild\t-ldflags=\"-X github.com/prometheus/common/version.Version=0.29.1 -X github.com/prometheus/common/version.Revision=ad91668339ca265f460c23fc422a27ba6d788db9 -X github.com/prometheus/common/version.Branch=HEAD -X github.com/prometheus/common/version.BuildUser=root@ab03ed60a291 -X github.com/prometheus/common/version.BuildDate=20261021-18:03:25  -extldflags '-static'\"\n\tbuild\tDefaultGODEBUG=tracebacklabels=0,x509sslcertoverrideplatform=0\n\tbuild\tCGO_ENABLED=0\n\tbuild\tGOARCH=amd64\n\tbuild\tGOOS=linux\n\tbuild\tGOAMD64=v1\n\tbuild\tvcs=git\n\tbuild\tvcs.revision=ad91668339ca265f460c23fc422a27ba6d788db9\n\tbuild\tvcs.time=2026-10-21T17:22:58Z\n\tbuild\tvcs.modified=false\n"
+}
