@@ -3,7 +3,7 @@
 pulseping-lite helps with quick uptime and TLS certificate expiry checks for one URL or `host:port`, from cron or CI, without running a monitoring server. Python stdlib only (3.9+), plain text or `--json` output, and exit codes 0/1/2 so cron or CI can act on the result.
 
 
-**Free · MIT · one file · no pip install.** One target per run; no dashboard, history or built-in alerts.
+**Free · MIT · one file · stdlib only.** One target per run; no dashboard, history or built-in alerts.
 
 Need multi-monitor workflows? **[PulsePing CLI](https://py-forge.com/products/pulseping-cli?utm_source=github&utm_medium=readme&utm_campaign=pulseping-lite)** · **[PyForge All-Access Pass](https://py-forge.com/pass?utm_source=github&utm_medium=readme&utm_campaign=pulseping-lite)**
 
@@ -23,13 +23,20 @@ DOWN https://example.com  status=200  200.0 ms  cert expires in 45 days
 
 The first check exits `0`; the deliberately larger warning window exits `1` even though HTTP is up. [Recording source](docs/demo.cast) · [Capture script](docs/record-demo.py).
 
-## One-command install (zero dependencies)
+## Install
+
+```bash
+pip install pulseping-lite
+pulseping-lite https://example.com
+```
+
+Or download the single file (Python 3.9+, stdlib only, no extra packages):
 
 ```bash
 curl -fsSLO https://raw.githubusercontent.com/alessio1999xx-debug/pulseping-lite/main/pulseping_lite.py && python3 pulseping_lite.py https://example.com
 ```
 
-Requires an existing Python 3.9+ installation and `curl` for the download command. Alternatively, download `pulseping_lite.py`, inspect it, and run it with Python. No `pip install`, no config file, no state. Flags: `--warn-days`, `--timeout`, `--tls`, `--insecure`, `--json`, `--version`.
+Requires Python 3.9+. No config file and no state. Flags: `--warn-days`, `--timeout`, `--tls`, `--insecure`, `--json`, `--version`. After `pip install`, use `pulseping-lite` in place of `python3 pulseping_lite.py`.
 
 ## Usage
 

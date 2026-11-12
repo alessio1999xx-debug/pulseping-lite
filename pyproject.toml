@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pulseping-lite"
+version = "0.1.0"
+description = "Uptime monitor and TLS certificate expiry check in one stdlib-only Python CLI."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.9"
+authors = [{name = "Alessio Auretto"}]
+keywords = [
+  "uptime",
+  "monitoring",
+  "tls",
+  "ssl",
+  "certificate",
+  "healthcheck",
+  "cli",
+  "stdlib",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Intended Audience :: System Administrators",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: System :: Monitoring",
+  "Topic :: System :: Networking :: Monitoring",
+  "Topic :: Utilities",
+]
+[project.urls]
+Homepage = "https://github.com/alessio1999xx-debug/pulseping-lite"
+"Pro version" = "https://py-forge.com/products/pulseping-cli"
+
+[project.scripts]
+pulseping-lite = "pulseping_lite:main"
+
+[tool.setuptools]
+py-modules = ["pulseping_lite"]

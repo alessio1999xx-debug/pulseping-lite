@@ -1,0 +1,5 @@
+include LICENSE
+include README.md
+include pyproject.toml
+include pulseping_lite.py
+include test_pulseping_lite.py

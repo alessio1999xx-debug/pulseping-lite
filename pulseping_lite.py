@@ -113,7 +113,7 @@ def check(target: str, timeout: float = 5.0, warn_days: int = 14, verify: bool =
 
 def build_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(
-        prog="pulseping_lite.py",
+        prog="pulseping-lite",
         description="Check one URL or host:port, and report days until its TLS certificate expires.")
     p.add_argument("target", help="https://example.com/health, http://host:8080, or host:port")
     p.add_argument("--warn-days", type=int, default=14, help="fail when the certificate expires sooner (default 14)")
