@@ -133,14 +133,18 @@ Payload uses exact file byte counts, not compressed downloads or filesystem bloc
 
 ## Need more?
 
-The full **[PulsePing CLI](https://py-forge.com/products/pulseping-cli?utm_source=github&utm_medium=readme&utm_campaign=pulseping-lite)** helps with:
+The full **[PulsePing CLI](https://py-forge.com/products/pulseping-cli?utm_source=github&utm_medium=readme&utm_campaign=pulseping-lite)** is for running many monitors, not just one check. One-time payment, no subscription.
 
-- many monitors in one config file (HTTP with expected status and keyword, TCP, DNS, certificate expiry, gRPC health)
-- consecutive-failure thresholds, so a single blip does not become an alert
-- alerts to Telegram, Discord, Slack, PagerDuty or a webhook, with recovery notices
-- a static, zero-JavaScript status page
+| Capability | Lite (free) | Paid PulsePing CLI |
+| --- | --- | --- |
+| Targets per run | One URL or `host:port` | Many monitors in one config file |
+| Check types | HTTP(S) status, TCP connect, TLS certificate expiry | HTTP with expected status and keyword, plus TCP, DNS, certificate expiry and gRPC |
+| Consecutive-failure threshold | No (one check, immediate exit) | Yes: a monitor goes down only after several consecutive failures |
+| Alerts | No (exit codes only; cron or CI decides what happens next) | Telegram, Discord, Slack, PagerDuty or a webhook, with recovery notices |
+| Status page | No | Yes (`status-page`: static, zero-JavaScript HTML) |
+| JSON output | Yes (`--json`) | Yes (`--json`) |
 
-One-time payment, no subscription. Every PyForge tool is also in the [All-Access Pass](https://py-forge.com/pass?utm_source=github&utm_medium=readme&utm_campaign=pulseping-lite).
+Every PyForge tool is also in the [All-Access Pass](https://py-forge.com/pass?utm_source=github&utm_medium=readme&utm_campaign=pulseping-lite) ($99, one payment).
 
 ## Tests
 
