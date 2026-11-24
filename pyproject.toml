@@ -38,8 +38,9 @@ classifiers = [
   "Topic :: Utilities",
 ]
 [project.urls]
-Homepage = "https://github.com/alessio1999xx-debug/pulseping-lite"
-"Pro version" = "https://py-forge.com/products/pulseping-cli"
+Homepage = "https://py-forge.com/products/pulseping-cli?utm_source=pypi&utm_medium=project_page&utm_campaign=pulseping-lite"
+Source = "https://github.com/alessio1999xx-debug/pulseping-lite"
+Repository = "https://github.com/alessio1999xx-debug/pulseping-lite"
 
 [project.scripts]
 pulseping-lite = "pulseping_lite:main"
